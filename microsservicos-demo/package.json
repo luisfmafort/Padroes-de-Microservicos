@@ -1,0 +1,16 @@
+{
+  "name": "microsservicos-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demonstração do padrão de Microsserviços com API Gateway, Serviço de Produtos e Serviço de Pedidos",
+  "scripts": {
+    "gateway": "node api-gateway/index.js",
+    "produtos": "node produto-service/index.js",
+    "produtos:lento": "node produto-service/index.js --lento",
+    "pedidos": "node pedido-service/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.21.0",
+    "express": "^5.3.0"
+  }
+}
